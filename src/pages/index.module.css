@@ -1,0 +1,72 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroImage {
+  margin-bottom: 1rem;
+}
+
+.character {
+  font-size: 4rem;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
